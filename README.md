@@ -14,3 +14,7 @@ a) bestsell1.jpg, bestsell2.jpg, bestsell3.jpg, bestsell4.jpg, bestsell5.jpg, be
 4. Breadcrumbs
 5. Accordion
 6. Modal forms
+
+![index-html](https://user-images.githubusercontent.com/14962281/212683244-281c7e2d-0df7-4825-9d22-33eb48e94cf2.png)
+![authors-html](https://user-images.githubusercontent.com/14962281/212683287-45a75804-dbf0-47f7-b6bd-6296af311c93.png)
+![contact-html](https://user-images.githubusercontent.com/14962281/212683319-62155c04-3c49-4eab-bdee-3d66e5448504.png)
