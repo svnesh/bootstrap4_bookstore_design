@@ -1,0 +1,219 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Book Store</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Email id">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input">
+                                    <label class="form-check-label">Remember me</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-sm fixed-top navbar-light bg-light">
+        <div class="container">
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="./index.html" class="navbar-brand">
+                <img src="img/book_back.jpg" width="40" height="30" alt="book_back" class="img-fluid">
+            </a>
+            <div class="collapse navbar-collapse" id="Navbar">
+
+                <form class="form-inline my-2 my-lg-0 mr-5">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link"><i class="fa fa-home fa-lg"></i> Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link"><i class="fa fa-pencil"></i> Our Authors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contact.html" class="nav-link"><i class="fa fa-address-card fa-lg"></i> Contact</a>
+                    </li>
+                </ul>
+                
+                <span class="navbar-text">
+                    <a id="loginLink">
+                        <span class="fa fa-sign-in"></span> Login
+                    </a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" id="authdiv">
+        <div class="row">
+            <ol class="col-12 breadcrumb bg-transparent">
+                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item active">Our Authors</li>
+            </ol>
+
+            <div class="col-12">
+                <h3>Our Authors</h3>
+                <hr>
+            </div>
+        </div>
+        <div class="row row-header">
+            <div class="col-12 col-sm-6">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus hic molestiae deleniti ratione explicabo debitis non quisquam ab, esse nemo vitae maxime rerum sequi. Molestiae aliquid doloribus aperiam quasi atque.</p>
+            </div>
+
+            <div class="col-12 col-sm-6">
+                <div class="card card-body bg-light">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">“‘Classic’ – a book which people praise and don’t read.”</p>
+                        <footer class="blockquote-footer">Mark Twain</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row row-content">
+            <div class="col-12">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="au1head">
+                            <h5 class="mb-0">
+                                <a data-toggle="collapse" aria-expanded="true" aria-controls="cardau1" data-target="#cardau1">
+                                    Author 1 Name
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="cardau1" class="collapse show" data-parent="#accordion">
+                            <div class="card-body d-flex">
+                                <img src="img/user1.png" alt="user1" class="img-thumbnail mr-2">
+                                <p>Ipsum dolor sit amet consectetur adipisicing elit. Corrupti eos labore obcaecati, soluta quisquam quod ullam a minus accusantium facilis dicta deserunt ea magni, dignissimos ducimus necessitatibus, ab neque qui.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="au2head">
+                            <h5 class="mb-0">
+                                <a class="collapsed" data-toggle="collapse" data-target="#cardau2" aria-expanded="false" aria-controls="cardau2">
+                                    Author 2 Name
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="cardau2" class="collapse" data-parent="#accordion">
+                            <div class="card-body d-flex">
+                                <img src="img/user1.png" alt="user1" class="img-thumbnail mr-2">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eos labore obcaecati, soluta quisquam quod ullam a minus accusantium facilis dicta deserunt ea magni, dignissimos ducimus necessitatibus, ab neque qui.</p>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="card">
+                        <div class="card-header" id="au3head">
+                            <h5 class="mb-0">
+                                <a class="collapsed" data-toggle="collapse" data-target="#cardau3" aria-expanded="false" aria-controls="cardau3">
+                                    Author 3 Name
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="cardau3" class="collapse" data-parent="#accordion">
+                            <div class="card-body d-flex">
+                                <img src="img/user1.png" alt="user1" class="img-thumbnail mr-2">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eos labore obcaecati, soluta quisquam quod ullam a minus accusantium facilis dicta deserunt ea magni, dignissimos ducimus necessitatibus, ab neque qui.</p>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="card">
+                        <div class="card-header" id="au4head">
+                            <h5 class="mb-0">
+                                <a class="collapsed" data-toggle="collapse" data-target="#cardau4" aria-expanded="false" aria-controls="cardau4">
+                                    Author 4 Name
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="cardau4" class="collapse" data-parent="#accordion">
+                            <div class="card-body d-flex">
+                                <img src="img/user1.png" alt="user1" class="img-thumbnail mr-2">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eos labore obcaecati, soluta quisquam quod ullam a minus accusantium facilis dicta deserunt ea magni, dignissimos ducimus necessitatibus, ab neque qui.</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-3">
+                    <h6>JOIN OUR MAILING LIST</h6>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Email ID">
+                        <div class="input-group-append">
+                            <button type="button" class="btn btn-primary">Sign In</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4 col-sm-2 ml-1">
+                    <h6>Topics</h6><a href="#">Thriller</a><br><a href="#">Comedy</a><br><a href="#">Science</a><br><a href="#">Horror</a><br><a href="#">Romance</a>
+                </div>
+
+                <div class="col-6 col-sm-4">
+                    <h6>About</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nobis cumque numquam tempore eligendi minima, ipsa ea nesciunt? Mollitia saepe aliquam eos voluptatibus eligendi at unde inventore delectus, culpa nam.</p>
+                </div>
+
+                <div class="col-6 col-sm-2">
+                    <h6>Contact Us</h6>
+                    <p>No: 123, XYZ Street <br> ABC City <br> Zip: 000 000 <br> Tel: +0 000 000</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery, Popper.js, Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> 
+    <script src="js/scripts.js"></script>   
+</body>
+</html>

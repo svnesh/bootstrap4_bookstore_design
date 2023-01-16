@@ -1,0 +1,71 @@
+.jumbotron{
+    margin: 0px auto;
+    padding: 70px 30px;
+}
+
+#authdiv{
+    margin: 0px auto;
+    padding: 70px 30px;
+}
+#contactdiv{
+    margin: 0px auto;
+    padding: 50px 30px;
+}
+
+#bestsellhead{
+    margin: 20px 0px 15px 0px;
+    text-align: center;
+}
+#bestsell{
+    border: none;
+    margin: 10px 0px 0px 0px;
+}
+#bestsell img{
+    width: 180px;
+    height: 250px;
+}
+
+.footer{
+    margin-top: 40px;
+    color: gray;
+    font-size: 14px;
+}
+
+#authorcard img{
+    width: 30px;
+    height: 30px;
+}
+
+
+#authorgenre{
+    margin-top: 20px;
+}
+#authorcards{
+    margin-top: 15px;
+}
+
+#genrecard img{
+    width: 100px;
+    height: 120px;
+    object-fit: contain;
+}
+#genredetails{
+    padding: 0px;
+}
+
+#starRating{
+    color: orange;
+}
+
+.row-content{
+    margin-top: 20px;
+}
+
+.card-body img{
+    width: 80px;
+    height: 80px;
+}
+
+.row-header{
+    font-size: 20px;
+}
